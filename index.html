@@ -10,10 +10,29 @@
     />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./Img/favicon.png" type="image/png" />
     <title>Neptune</title>
   </head>
   <body>
-    <article>
+    <header>
+      <nav>
+        <img src="./Img/Homeicon.png" alt="Small picture of neptune" />
+        <ul>
+          <li><a href="#intro">Floating Cities</a></li>
+          <li><a href="#image-gallery">Gallery</a></li>
+          <li><a href="#info">Info</a></li>
+          <li><a href="#image">Image</a></li>
+          <li><a href="#about-us">About us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <a href="#top" class="sticky-button">↑ Home</a>
+    <!-- Hero section -->
+    <section id="Hero">
+      <img src="./Img/Hero.png" alt="Large picture of neptune" />
+    </section>
+    <!-- Intro section -->
+    <article id="intro">
       <section>
         <h1>Neptune</h1>
         <h2>The Celestial Dreamscape</h2>
@@ -49,40 +68,38 @@
         </p>
       </section>
     </article>
+    <!-- image gallery -->
+    <section id="image-gallery">
+      <figure class="imggal">
+        <img src="./Img/Neptune Clouds.png" alt="Clouds of neptune" />
+        <figcaption class="textgal">
+          Hubble View of Neptune<br />
+          These NASA Hubble Space Telescope views of the blue-green planet
+          Neptune provide three snapshots of changing weather conditions. The
+          images were taken in 1994 on 3 separate days when Neptune was 2.8
+          billion miles 4.5 billion kilometers from Earth.
+        </figcaption>
+      </figure>
+      <figure class="imggal">
+        <img src="./Img/Neptune Angle.png" alt="Different angles of neptune" />
+        <figcaption class="textgal">
+          Post-encounter View of Neptune South Pole<br />
+          NASA Voyager 2 post-encounter view of Neptune south pole as the
+          spacecraft sped away on a southward trajectory.
+        </figcaption>
+      </figure>
+      <figure class="imggal">
+        <img src="./Img/Neptune rings.png" alt="rings of neptune" />
+        <figcaption class="textgal">
+          Neptune Rings<br />
+          In Neptune outermost ring, 39,000 miles out, material mysteriously
+          clumps into three arcs. Voyager 2 acquired this image as it
+          encountered Neptune in August of 1989.
+        </figcaption>
+      </figure>
+    </section>
     <div>
-      <section>
-        <h1>Neptune</h1>
-        <h2>Gallery</h2>
-        <div class="gallery">
-          <div>
-            <img
-              src="/Planet-Project/Img/Neptune Angle.png"
-              alt="Neptune Angle"
-            />
-          </div>
-          <div>
-            <img
-              src="/Planet-Project/Img/Neptune Clouds.png"
-              alt="Neptune Clouds"
-            />
-          </div>
-          <div>
-            <img
-              src="/Planet-Project/Img/Neptune Pole.png"
-              alt="Neptune Pole"
-            />
-          </div>
-          <div>
-            <img
-              src="/Planet-Project/Img/Neptune rings.png"
-              alt="Neptune Rings"
-            />
-          </div>
-        </div>
-      </section>
-    </div>
-    <div>
-      <section class="twi">
+      <section class="twi" id="info">
         <div>
           <figure class="smiley">
             <img src="Img/Neptune Angle.png" alt="Neptune Angle" />

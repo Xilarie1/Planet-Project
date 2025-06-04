@@ -8,11 +8,68 @@ orbitron - Headlines 57px "Orbitron", sans-serif;
 orbitron - Sub headlines 52px "Orbitron", sans-serif;
 exo - text size 16px "Exo", sans-serif;
 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   background-color: #fef7ff;
   color: #1d1b20;
   font-family: "Exo", sans-serif;
   margin: 0;
+  min-width: 100svw;
+  min-height: 100svh;
+}
+html {
+  scroll-behavior: smooth;
+}
+nav {
+  display: flex;
+  padding: 14px 92px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  background-color: inherit;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  height: 100%;
+  font-size: 14px;
+  font-family: "Exo", sans-serif;
+}
+li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  height: 48px;
+  background-color: #e8def8;
+  color: #65558f;
+  border-radius: 16px;
+  min-width: 138px;
+}
+a,
+a:active,
+a:visited {
+  text-decoration: none;
+  font-family: "Exo", sans-serif;
+  color: none;
+}
+a:hover {
+  font-size: 20px;
+  font-family: "Exo", sans-serif;
+}
+#Hero {
+  display: flex;
+  flex-direction: column;
+  width: 100svw;
+  align-items: center;
+  background-color: inherit;
 }
 h1,
 h2,
@@ -56,21 +113,7 @@ section p {
   background-color: #fef7ff;
   padding: 20px;
 }
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  flex-basis: 662px;
-  gap: 10px;
-  margin: 20px 0;
-  padding: 20px;
-  background-color: #e8def8;
-}
-.gallery img {
-  max-width: 100%;
-  height: auto;
-  max-height: 100%;
-}
+
 .smiley {
   display: flex;
   flex-direction: column;
@@ -80,4 +123,43 @@ section p {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+.sticky-button {
+  position: fixed;
+  right: 20px;
+  bottom: 50px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  height: 48px;
+  background-color: #e8def8;
+  color: #65558f;
+  border-radius: 16px;
+  min-width: 138px;
+  text-decoration: none;
+  cursor: pointer;
+}
+#image-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  gap: 16px;
+  padding: 2rem;
+}
+
+#image-gallery figure {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font-family: "Exo", sans-serif;
+  background-color: #e8def8;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+#image-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
