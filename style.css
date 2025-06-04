@@ -58,7 +58,7 @@ a:visited {
   font-family: "Exo", sans-serif;
   color: none;
 }
-li a:hover {
+a:hover {
   font-size: 20px;
   font-family: "Exo", sans-serif;
 }
@@ -70,18 +70,17 @@ li a:hover {
 }
 .sticky-button {
   position: fixed;
-  bottom: 20px;
   right: 20px;
-  padding: 12px 16px;
-  background-color: #65558f;
-  color: white;
-  border: none;
-  border-radius: 50%;
-  font-size: 20px;
-  cursor: pointer;
-  text-decoration: none;
+  bottom: 50px;
   display: inline-flex;
-  align-items: center;
   justify-content: center;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  align-items: center;
+  padding: 5px;
+  height: 48px;
+  background-color: #e8def8;
+  color: #65558f;
+  border-radius: 16px;
+  min-width: 138px;
+  text-decoration: none;
+  cursor: pointer;
 }
