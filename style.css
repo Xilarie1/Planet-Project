@@ -9,7 +9,7 @@ orbitron - Sub headlines 52px font-family: "Exo", sans-serif;
 exo - text size 16px
 */
 /* body, nav, section, Hero article, h1, h2, h3, p,
-figure, figcaption, imggal, textgal */
+figure, figcaption, imggal, textgal, sticky-button */
 * {
   margin: 0;
   padding: 0;
@@ -83,4 +83,26 @@ a:hover {
   min-width: 138px;
   text-decoration: none;
   cursor: pointer;
+}
+#Image-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  padding: 2rem;
+}
+
+#Image-gallery figure {
+  width: 100%;
+  text-align: center;
+  font-family: "Exo", sans-serif;
+  background-color: #e8def8;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+#Image-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
