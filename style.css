@@ -1,0 +1,69 @@
+/* 
+#fef7ff -  Background
+#65558f - Headlines
+#E8DEF8 - Card-background
+#4A4458 - Sub headline
+#1D1B20 - Text-color
+orbitron - Headlines 57px font-family: "Orbitron", sans-serif;
+orbitron - Sub headlines 52px font-family: "Exo", sans-serif;
+exo - text size 16px
+*/
+/* body, nav, section, Hero article, h1, h2, h3, p,
+figure, figcaption, imggal, textgal */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  min-width: 100svw;
+  min-height: 100svh;
+  background-color: #fef7ff;
+}
+nav {
+  display: flex;
+  padding: 14px 92px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  height: 100%;
+  font-size: 14px;
+  font-family: "Exo", sans-serif;
+}
+li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  height: 48px;
+  background-color: #e8def8;
+  color: #65558f;
+  border-radius: 16px;
+  min-width: 138px;
+}
+a,
+a:active,
+a:visited {
+  text-decoration: none;
+  font-family: "Exo", sans-serif;
+}
+li a:hover {
+  font-size: 20px;
+  font-family: "Exo", sans-serif;
+}
+#Hero {
+  display: flex;
+  flex-direction: column;
+  width: 100svw;
+  align-items: center;
+}
