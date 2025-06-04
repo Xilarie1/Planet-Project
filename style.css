@@ -4,7 +4,80 @@
 #E8DEF8 - Card-background
 #4A4458 - Sub headline
 #1D1B20 - Text-color
-orbitron - Headlines 57px
-orbitron - Sub headlines 52px
-exo - text size 16px
+orbitron - Headlines 57px "Orbitron", sans-serif;
+orbitron - Sub headlines 52px "Orbitron", sans-serif;
+exo - text size 16px "Exo", sans-serif;
 */
+body {
+  background-color: #fef7ff;
+  color: #1d1b20;
+  font-family: "Exo", sans-serif;
+  margin: 0;
+}
+h1,
+h2,
+h3 {
+  font-family: "Orbitron", sans-serif;
+  color: #65558f;
+}
+h1 {
+  font-size: 57px;
+  margin-bottom: 20px;
+}
+h2 {
+  font-size: 52px;
+  color: #4a4458;
+  margin-bottom: 15px;
+}
+p {
+  font-family: "Exo", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+article {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #fef7ff;
+  flex-direction: row;
+  max-width: 705px;
+}
+section {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #e8def8;
+}
+section p {
+  color: #1d1b20;
+  background-color: #fef7ff;
+  padding: 20px;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex-basis: 662px;
+  gap: 10px;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #e8def8;
+}
+.gallery img {
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+}
+.smiley {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.twi {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
