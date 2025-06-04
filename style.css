@@ -56,6 +56,7 @@ li {
 a,
 a:active,
 a:visited {
+  color: #65558f;
   text-decoration: none;
   font-family: "Exo", sans-serif;
   color: none;
