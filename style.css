@@ -8,3 +8,7 @@ orbitron - Headlines 57px "Orbitron", sans-serif;
 orbitron - Sub headlines 52px "Orbitron", sans-serif;
 exo - text size 16px "Exo", sans-serif;
 */
+img {
+  max-width: 100%;
+  height: auto;
+}
