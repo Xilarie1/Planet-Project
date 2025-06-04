@@ -124,7 +124,7 @@ section p {
   flex-direction: row;
   align-items: center;
 }
-.sticky-button {
+#sticky-button {
   position: fixed;
   right: 20px;
   bottom: 50px;
