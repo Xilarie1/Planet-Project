@@ -133,8 +133,8 @@ section p {
   align-items: center;
   padding: 5px;
   height: 48px;
-  background-color: #e8def8;
-  color: #65558f;
+  background-color: #65558f;
+  color: #e8def8; /* Bytta tekst og bakgrunn for bedre kontrast */
   border-radius: 16px;
   min-width: 138px;
   text-decoration: none;
