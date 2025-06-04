@@ -72,6 +72,12 @@ section p {
   max-height: 100%;
 }
 .smiley {
+  display: flex;
   flex-direction: column;
+  align-items: center;
+}
+.twi {
+  display: flex;
+  flex-direction: row;
   align-items: center;
 }
