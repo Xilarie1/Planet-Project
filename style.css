@@ -86,13 +86,14 @@ a:hover {
 }
 #Image-gallery {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 3fr);
   gap: 16px;
   padding: 2rem;
 }
 
 #Image-gallery figure {
   width: 100%;
+  height: auto;
   text-align: center;
   font-family: "Exo", sans-serif;
   background-color: #e8def8;
