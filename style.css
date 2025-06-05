@@ -17,10 +17,14 @@ exo - text size 16px "Exo", sans-serif;
   --subheadline-color: #4a4458;
   --headline-font: "Orbitron", sans-serif;
   --text-font: "Exo", sans-serif;
+  --text-padding: 20px;
+  --h1-size: 57px;
+  --h2-size: 52px;
+  --text-size: 16px;
 }
 * {
-  margin: 0;
-  padding: 0;
+  margin: 10px;
+  padding: 5px;
   box-sizing: border-box;
 }
 body {
@@ -84,22 +88,27 @@ a:hover {
 h1,
 h2,
 h3 {
-  font-family: "Orbitron", sans-serif;
+  font-family: var(--headline-font);
   color: var(--secondary-color);
 }
 h1 {
-  font-size: 57px;
+  font-size: var(--h1-size);
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 h2 {
-  font-size: 52px;
-  color: var(--subheadline-color)
+  font-size: var(--h2-size);
+  color: var(--subheadline-color);
   margin-bottom: 15px;
 }
 p {
-  font-family: "Exo", sans-serif;
-  font-size: 16px;
+  font-family: var(--text-font);
+  font-size: var(--text-size);
   line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--primary-color);
+  text-align: justify;
+  padding: var(--text-padding);
 }
 img {
   max-width: 100%;
@@ -108,21 +117,20 @@ img {
 article {
   margin: 0 auto;
   max-width: 800px;
-  padding: 20px;
-  background-color: #fef7ff;
+  padding: var(--text-padding);
+  background-color: var(--accent-color);
   flex-direction: row;
-  max-width: 705px;
 }
 section {
   margin-bottom: 40px;
-  padding: 20px;
-  background-color: #e8def8;
+  padding: var(--text-padding);
+  background-color: var(--accent-color);
 }
-section p {
-  color: #1d1b20;
-  background-color: #fef7ff;
-  padding: 20px;
-}
+/*section p {
+  color: var(--text-color);
+  background-color: var(--primary-color);
+  padding: var(--text-padding);
+}*/
 
 .smiley {
   display: flex;
@@ -143,8 +151,8 @@ section p {
   align-items: center;
   padding: 5px;
   height: 48px;
-  background-color: #65558f;
-  color: #e8def8; /* Bytta tekst og bakgrunn for bedre kontrast */
+  background-color: var(--secondary-color);
+  color: var(--accent-color); /* Bytta tekst og bakgrunn for bedre kontrast */
   border-radius: 16px;
   min-width: 138px;
   text-decoration: none;
