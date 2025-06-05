@@ -21,7 +21,7 @@ exo - text size 16px "Exo", sans-serif;
   --h1-size: 57px;
   --h2-size: 52px;
   --text-size: 16px;
-  --hover-size: 20px;
+  --hover-size: var(--text-size) + 4px;
   --button-height: 48px;
 }
 * {
