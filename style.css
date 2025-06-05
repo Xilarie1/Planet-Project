@@ -8,7 +8,7 @@ orbitron - Headlines 57px "Orbitron", sans-serif;
 orbitron - Sub headlines 52px "Orbitron", sans-serif;
 exo - text size 16px "Exo", sans-serif;
 */
-*/* Convert colours, typefaces and sizes to variables */
+/* Convert colours, typefaces and sizes to variables */
 *:root {
   --primary-color: #fef7ff;
   --secondary-color: #65558f;
@@ -85,7 +85,7 @@ h1,
 h2,
 h3 {
   font-family: "Orbitron", sans-serif;
-  color: #65558f;
+  color: var(--secondary-color);
 }
 h1 {
   font-size: 57px;
@@ -93,7 +93,7 @@ h1 {
 }
 h2 {
   font-size: 52px;
-  color: #4a4458;
+  color: var(--subheadline-color)
   margin-bottom: 15px;
 }
 p {
