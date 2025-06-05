@@ -8,18 +8,28 @@ orbitron - Headlines 57px "Orbitron", sans-serif;
 orbitron - Sub headlines 52px "Orbitron", sans-serif;
 exo - text size 16px "Exo", sans-serif;
 */
+*/* Convert colours, typefaces and sizes to variables */
+*:root {
+  --primary-color: #fef7ff;
+  --secondary-color: #65558f;
+  --accent-color: #e8def8;
+  --text-color: #1d1b20;
+  --subheadline-color: #4a4458;
+  --headline-font: "Orbitron", sans-serif;
+  --text-font: "Exo", sans-serif;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body {
-  background-color: #fef7ff;
-  color: #1d1b20;
-  font-family: "Exo", sans-serif;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  font-family: var(--text-font);
   margin: 0;
-  min-width: 100svw;
-  min-height: 100svh;
+  width: 100svw;
+  height: 100svh;
 }
 html {
   scroll-behavior: smooth;
@@ -40,7 +50,7 @@ ul {
   gap: 10px;
   height: 100%;
   font-size: 14px;
-  font-family: "Exo", sans-serif;
+  font-family: var(--text-font);
 }
 li {
   display: flex;
@@ -48,21 +58,21 @@ li {
   align-items: center;
   padding: 5px;
   height: 48px;
-  background-color: #e8def8;
-  color: #65558f;
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
   border-radius: 16px;
   min-width: 138px;
 }
 a,
 a:active,
 a:visited {
-  color: #65558f;
+  color: var(--secondary-color);
   text-decoration: none;
-  font-family: "Exo", sans-serif;
+  font-family: var(--text-font);
 }
 a:hover {
   font-size: 20px;
-  font-family: "Exo", sans-serif;
+  font-family: var(--text-font);
 }
 #Hero {
   display: flex;
