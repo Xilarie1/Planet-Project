@@ -21,6 +21,8 @@ exo - text size 16px "Exo", sans-serif;
   --h1-size: 57px;
   --h2-size: 52px;
   --text-size: 16px;
+  --hover-size: 20px;
+  --button-height: 48px;
 }
 * {
   margin: 10px;
@@ -69,14 +71,14 @@ li {
 }
 a,
 a:active,
-a:visited {
+a:visited,
+a:hover {
   color: var(--secondary-color);
   text-decoration: none;
   font-family: var(--text-font);
 }
 a:hover {
-  font-size: 20px;
-  font-family: var(--text-font);
+  font-size: var(--hover-size);
 }
 #Hero {
   display: flex;
