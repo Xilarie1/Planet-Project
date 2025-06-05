@@ -54,7 +54,7 @@ ul {
   gap: 10px;
   height: 100%;
   font-size: 14px;
-  font-family: var(--text-font);
+  font-family: var(--text-size);
 }
 li {
   display: flex;
@@ -67,6 +67,20 @@ li {
   border-radius: 16px;
   min-width: 138px;
 }
+a.nav,
+a.nav:visited,
+a.nav:active {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-family: var(--text-font);
+  font-size: var(--text-size);
+  transition: font-size 0.3s ease;
+}
+
+a.nav:hover {
+  font-size: var(--hover-size);
+}
+
 a,
 a:active,
 a:visited,
