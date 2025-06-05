@@ -21,7 +21,7 @@ exo - text size 16px "Exo", sans-serif;
   --h1-size: 57px;
   --h2-size: 52px;
   --text-size: 16px;
-  --hover-size: var(--text-size + 4);
+  --hover-size: calc(var(--text-size) + 4px);
   --button-height: 48px;
 }
 * {
@@ -56,7 +56,7 @@ ul {
   gap: 10px;
   height: 100%;
   font-size: 14px;
-  font-family: var(--text-font);
+  font-family: var(--text-size);
 }
 li {
   display: flex;
@@ -69,13 +69,27 @@ li {
   border-radius: 16px;
   min-width: 138px;
 }
+a.nav,
+a.nav:visited,
+a.nav:active {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-family: var(--text-font);
+  font-size: var(--text-size);
+  transition: font-size 0.3s ease;
+}
+
+a.nav:hover {
+  font-size: var(--hover-size);
+}
+
 a,
 a:active,
 a:visited,
 a:hover {
   color: var(--secondary-color);
   text-decoration: none;
-  font-family: var(--text-font);
+  font-family: var(--hover-size);
 }
 a:hover {
   font-size: var(--hover-size);
