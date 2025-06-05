@@ -150,11 +150,11 @@ section {
   padding: var(--text-padding);
   background-color: var(--accent-color);
 }
-/*section p {
+p.section {
   color: var(--text-color);
   background-color: var(--primary-color);
   padding: var(--text-padding);
-}*/
+}
 
 .smiley {
   display: flex;
