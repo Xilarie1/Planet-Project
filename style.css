@@ -20,7 +20,7 @@ exo - text size 16px "Exo", sans-serif;
   --text-padding: 20px;
   --h1-size: 3.5em;
   --h2-size: 3.2em;
-  --p-size: 16px;
+  --text-size: 16px;
   --hover-size: 1.25em;
   --button-height: 48px;
   @media (prefers-color-scheme: dark) {
@@ -105,7 +105,7 @@ a:hover {
 #Hero {
   display: flex;
   flex-direction: column;
-  width: 100svw;
+  width: 80svw;
   align-items: center;
   background-color: inherit;
 }
@@ -165,6 +165,7 @@ p.section {
   display: flex;
   flex-direction: row;
   align-items: center;
+  width: 50%;
 }
 #sticky-button {
   position: fixed;
@@ -184,13 +185,15 @@ p.section {
 }
 #image-gallery {
   display: grid;
-  grid-template-columns: repeat(3, 3fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 16px;
   padding: 2rem;
+  background-color: inherit;
+  width: 80svw;
 }
 
 #image-gallery figure {
-  width: 100%;
+  width: 90%;
   height: auto;
   text-align: center;
   font-family: "Exo", sans-serif;
