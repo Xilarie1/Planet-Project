@@ -23,6 +23,15 @@ exo - text size 16px "Exo", sans-serif;
   --p-size: 16px;
   --hover-size: 1.25em;
   --button-height: 48px;
+  @media (prefers-color-scheme: dark) {
+    body {
+      --primary-color: #141218;
+      --secondary-color: #d0bcfe;
+      --accent-color: #4a4458;
+      --text-color: #e6e0e9;
+      --subheadline-color: #ccc2dc;
+    }
+  }
 }
 body {
   margin: 10px;
@@ -141,11 +150,11 @@ section {
   padding: var(--text-padding);
   background-color: var(--accent-color);
 }
-/*section p {
+p.section {
   color: var(--text-color);
   background-color: var(--primary-color);
   padding: var(--text-padding);
-}*/
+}
 
 .smiley {
   display: flex;
@@ -187,7 +196,7 @@ section {
   height: auto;
   text-align: center;
   font-family: "Exo", sans-serif;
-  background-color: #e8def8;
+  background-color: --var(--accent-color);
   padding: 1rem;
   border-radius: 12px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
