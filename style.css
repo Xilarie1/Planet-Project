@@ -156,6 +156,7 @@ section {
   display: flex;
   flex-direction: row;
   align-items: center;
+  width: 50%;
 }
 #sticky-button {
   position: fixed;
@@ -178,6 +179,7 @@ section {
   grid-template-columns: repeat(3, 3fr);
   gap: 16px;
   padding: 2rem;
+  background-color: inherit;
 }
 
 #image-gallery figure {
