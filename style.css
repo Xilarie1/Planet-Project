@@ -20,7 +20,7 @@ exo - text size 16px "Exo", sans-serif;
   --text-padding: 20px;
   --h1-size: 3.5em;
   --h2-size: 3.2em;
-  --p-size: 16px;
+  --text-size: 16px;
   --hover-size: 1.25em;
   --button-height: 48px;
   @media (prefers-color-scheme: dark) {
