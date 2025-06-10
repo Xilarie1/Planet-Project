@@ -164,6 +164,8 @@ p.section {
   flex-direction: column;
   align-items: center;
   min-width: 100px;
+  max-width: 50%;
+  max-height: 80%;
 }
 .twi {
   display: flex;
