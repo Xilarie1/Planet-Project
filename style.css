@@ -105,9 +105,11 @@ a:hover {
 }
 #Hero {
   display: flex;
-  flex-direction: column;
-  width: 80svw;
+  padding: 50px 10px;
+  justify-content: center;
   align-items: center;
+  gap: 141px;
+  align-self: stretch;
   background-color: inherit;
 }
 h1,
