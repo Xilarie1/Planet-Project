@@ -50,6 +50,7 @@ html {
 }
 nav {
   display: flex;
+  flex-wrap: wrap;
   padding: 14px 92px;
   justify-content: space-between;
   align-items: center;
@@ -59,6 +60,7 @@ nav {
 ul {
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   gap: 10px;
@@ -111,7 +113,11 @@ a:hover {
   gap: 141px;
   align-self: stretch;
   background-color: inherit;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
+/*Wraps make responsive*/
 h1,
 h2,
 h3 {
