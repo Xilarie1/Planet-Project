@@ -40,7 +40,6 @@ body {
   background-color: var(--primary-color);
   color: var(--text-color);
   font-family: var(--text-font);
-  margin: 0;
   width: 100svw;
   height: 100svh;
 }
