@@ -231,3 +231,12 @@ p.section {
     transform: translateY(0);
   }
 }
+/*Ikke fornøyd med brøkvisningen, så jeg vil implementere en annen løsning for å vise finere brøker. Hentet fra LyXHTML.*/
+sup {
+  vertical-align: super;
+  font-size: smaller;
+}
+sub {
+  vertical-align: sub;
+  font-size: smaller;
+}
