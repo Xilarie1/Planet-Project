@@ -181,7 +181,7 @@ p.section {
 }
 #sticky-button {
   position: fixed;
-  right: 20px;
+  right: 40px;
   bottom: 90px;
   display: inline-flex;
   justify-content: center;
@@ -194,6 +194,7 @@ p.section {
   min-width: 138px;
   text-decoration: none;
   cursor: pointer;
+  z-index: 9999;
 }
 #image-gallery {
   display: grid;
