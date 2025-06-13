@@ -202,6 +202,8 @@ p.section {
   padding: 2rem;
   background-color: inherit;
   width: 80svw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #image-gallery figure {
